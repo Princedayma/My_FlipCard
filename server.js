@@ -4,7 +4,13 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://my-flip-card.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true 
+  }
+));
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
