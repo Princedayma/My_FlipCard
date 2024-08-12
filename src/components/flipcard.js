@@ -17,7 +17,7 @@ const FlipCard = ({ question, answer }) => {
       >
         {/* Front Face */}
         <div className="absolute w-full h-full bg-gray-200 flex items-center justify-center backface-hidden rounded-lg border border-gray-300  hover:animate-ping shadow-cyan-200 transition-shadow duration-300">
-          <h2 className="text-xl font-bold">{question}</h2>
+          <h2 className="text-xl text-black font-bold">{question}</h2>
         </div>
 
         {/* Back Face */}
